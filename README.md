@@ -1,24 +1,11 @@
-# api_fun
+# Having fun with fun apis :)
 
-## Project setup
+## Project 
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+Made with vue.js using vue-cli, deployed on Netlify
 ```
 
-### Compiles and minifies for production
+### Check it out
 ```
-npm run build
+https://be-happy-ok.netlify.com/
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
