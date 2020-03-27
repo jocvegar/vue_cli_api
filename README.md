@@ -5,7 +5,7 @@
 Made with vue.js using vue-cli, deployed on Netlify
 ```
 
-### Check it out
+### [Check it out](https://be-happy-ok.netlify.com/)
 ```
 https://be-happy-ok.netlify.com/
 ```
