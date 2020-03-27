@@ -46,7 +46,7 @@
         "src": "./img/icons/apple-icon-76x76.png",
         "sizes": "76x76",
         "type": "image/png"
-      },
+      }
     ],
     "start_url": "./index.html",
     "display": "standalone",
