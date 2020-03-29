@@ -33,7 +33,7 @@ export default {
     },
   },
   created() {
-    // this.getQuote();
+    this.getQuote();
     this.generateRandomIndex();
   },
 };
@@ -52,5 +52,4 @@ button {
   margin-top: 5em;
   color: white;
 }
-
 </style>

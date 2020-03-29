@@ -17,15 +17,33 @@ export default {
   data() {
     return {
       image: '',
+      backgroundColor: [
+        '#f76a8c',
+        '#f8dc88',
+        '#f8fab8',
+        '#ccf0e1',
+        '#ffd1bd',
+        '#639a67',
+        '#d8ebb5',
+        '#d9bf77',
+        '#1eb2a6',
+        '#f67575',
+      ],
     };
   },
   methods: {
     changeUI(index) {
       this.image = index;
+      this.backgroundColorChanger(index);
+    },
+    backgroundColorChanger(index) {
+      const el = document.body;
+      el.style.backgroundColor = this.backgroundColor[index];
     },
   },
   created() {
     this.image = 0;
+    document.body.style.backgroundColor = '#fff';
   },
 };
 </script>
