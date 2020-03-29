@@ -1,7 +1,8 @@
+/* eslint-disable import/no-dynamic-require */
 <template>
   <div id="app">
-    <img alt="Happy logo" src="./assets/happy.png">
-    <Quote />
+    <img :src="require(`./assets/${image}.png`)" alt="happy stuff"/>
+    <Quote @changeUI='changeUI($event)'/>
   </div>
 </template>
 
@@ -12,6 +13,19 @@ export default {
   name: 'App',
   components: {
     Quote,
+  },
+  data() {
+    return {
+      image: '',
+    };
+  },
+  methods: {
+    changeUI(index) {
+      this.image = index;
+    },
+  },
+  created() {
+    this.image = 0;
   },
 };
 </script>

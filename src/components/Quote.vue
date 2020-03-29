@@ -26,11 +26,15 @@ export default {
     },
     setResults(result) {
       this.quote = result.affirmation;
+      this.$emit('changeUI', this.generateRandomIndex());
+    },
+    generateRandomIndex() {
+      return Math.floor(Math.random() * 10);
     },
   },
-
   created() {
-    this.getQuote();
+    // this.getQuote();
+    this.generateRandomIndex();
   },
 };
 </script>
