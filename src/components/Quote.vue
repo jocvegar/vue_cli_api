@@ -1,9 +1,17 @@
 <template>
   <div class="quote">
-    <h3>{{ quote }}</h3>
-    <button @click="getQuote" type="button">
-      Another Quote Please :)
-    </button>
+    <section v-if="errored">
+      <p>No lo pude cargar! Tratá en un ratito</p>
+    </section>
+    <section v-else>
+      <div v-if="loading" class="loading">Loading something cool...</div>
+      <div v-else>
+        <h3>{{ quote }}</h3>
+        <button @click="getQuote" type="button">
+          Another Quote Please :)
+        </button>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -13,6 +21,8 @@ export default {
   data() {
     return {
       quote: '',
+      loading: true,
+      errored: false,
     };
   },
   methods: {
@@ -22,7 +32,12 @@ export default {
       fetch(proxyurl + url)
         .then((response) => response.json())
         .then(this.setResults)
-        .catch(() => console.log(`Cant access ${url} response. Blocked by browser?`));
+        .catch((error) => {
+          console.log(error);
+          console.log(`Cant access ${url} response. Blocked by browser?`);
+          this.errored = true;
+        })
+        .finally(this.loading = false);
     },
     setResults(result) {
       this.quote = result.affirmation;
@@ -51,5 +66,8 @@ button {
   border-radius: 4px;
   margin-top: 5em;
   color: white;
+}
+.loading{
+  padding-top:2rem;
 }
 </style>
