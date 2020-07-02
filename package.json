@@ -29,10 +29,7 @@
     "env": {
       "node": true
     },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/airbnb"
-    ],
+    "extends": [],
     "parserOptions": {
       "parser": "babel-eslint"
     },

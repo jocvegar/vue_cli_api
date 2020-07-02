@@ -66,6 +66,8 @@ button {
   border-radius: 4px;
   margin-top: 5em;
   color: white;
+  border: none;
+  outline:none;
 }
 .loading{
   padding-top:2rem;
