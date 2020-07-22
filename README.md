@@ -1,6 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6a6eb6b-cdec-4f32-b7f1-2ca6f5116a5f/deploy-status)](https://app.netlify.com/sites/be-happy-ok/deploys)
+
 # Having fun with fun apis :)
 
-## Project 
 ```
 Made with vue.js using vue-cli, deployed on Netlify
 ```
