@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "eslint": "^5.16.0",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.11"
   },
@@ -19,7 +20,6 @@
     "@vue/cli-service": "~4.2.0",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-vue": "^6.1.2",
     "vue-template-compiler": "^2.6.11"
@@ -31,7 +31,8 @@
     },
     "extends": [],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "babel-eslint",
+      "sourceType": "module"
     },
     "rules": {}
   },

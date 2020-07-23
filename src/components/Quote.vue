@@ -68,6 +68,7 @@ button {
   color: white;
   border: none;
   outline:none;
+  cursor: pointer;
 }
 .loading{
   padding-top:2rem;

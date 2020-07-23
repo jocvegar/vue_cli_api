@@ -1,4 +1,4 @@
-/* eslint-disable import/no-dynamic-require */
+/* eslint-disable */ 
 <template>
   <div id="app">
     <img :src="require(`./assets/${image}.png`)" alt="happy stuff"/>
